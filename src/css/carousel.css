@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+
+.containerCarousel{
+    display: flex;
+    align-items: center;
+}
+
+.carousel{
+    display: flex;
+    height: 50vw;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    gap: 20px;
+    
+}
+
+.imageCarousel{
+    height: 30px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.imageCarousel.next{
+    top: 20px;
+    right: 30vw;
+}
+
+.imageCarousel.previous{
+    bottom: 10px;
+}
+
+.carousel span{
+    font-size: 30px;
+}
+
+.carousel .contents{
+    height: 21vw;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 5%;
+    border: 3px dashed #470052;
+
+    background-color: #CF01FF;
+}
+
+.carousel .imageProject{
+    width: 300px;
+    height: 200px;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.carousel .imageProject:hover{
+    transform: scale(1.01);
+}
+
+.carousel .contents .description{
+    font-family: Alkatra;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    line-height: 1.2;
+    gap: 10px;
+}
+
+.containerCarousel .observerImage{
+    height: 28em;
+    width: 33em;
+}
+
+@keyframes downArrowAnimation {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+        visibility: hidden;
+    }
+}
+
+@keyframes upArrowAnimation {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+

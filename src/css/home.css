@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.containerHome{
+    /* background: url("/assets/image/icons/purple.jpg");
+    background-size: cover; */
+    height: 100vh;
+    max-width: 100vw;
+}
+
+.myName{
+    display: inline-block;
+    position: relative;
+}
+
+
+.myName .name{
+    position: absolute;
+    font-family: Righteous;
+    font-size: 40px;
+    top: 0px;
+    left: 10px;
+}
+
+.myName .dev{
+    position: absolute;
+    font-family: Righteous;
+    font-size: 25px;
+    color: #2c2c2c;
+    top: 43px;
+    left: 10px;
+    list-style-type: circle;
+} 
+
+.myName .imagePaper{
+    position: relative;
+    height: 100px;
+    width: 400px;
+}
+
+p{
+    position: absolute;
+}
+
+

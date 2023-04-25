@@ -1,3 +1,6 @@
 body{
     font-family: 'Raleway', sans-serif;
+    
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(38,0,51,1) 39%, rgba(109,0,115,1) 79%, rgba(183,213,229,1) 100%);
 }
