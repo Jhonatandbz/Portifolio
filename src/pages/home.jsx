@@ -87,7 +87,13 @@ export default function home(){
                     <figcaption className="dev"> <em>Dev junior</em></figcaption>
                 
                 </div>
+
+                <div className="apresentationImage">
+                    <img src="/assets/image/icons/undraw_tree.png" alt="man next to a tree" />
+                </div>
             </div>
+
+            
 
             <div className="tec">
                     <Tecnology options={tecnology}/>

@@ -19,7 +19,8 @@
   "homepage": "https://github.com/Jhonatandbz/Portifolio#readme",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "yarm": "^0.4.0"
   },
   "devDependencies": {
     "vite": "^4.2.1"
