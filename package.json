@@ -1,6 +1,7 @@
 {
   "name": "portifolio",
   "version": "1.0.0",
+  "homepage": "Portifolio/" ,
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/Jhonatandbz/Portifolio/issues"
   },
-  "homepage": "https://github.com/Jhonatandbz/Portifolio#readme",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
