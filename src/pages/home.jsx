@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Carousel from "../components/carousel";
 import Tecnology from "../components/tecnology";
 import "../css/home.css";
+import WriteText from "../components/funcoes";
 
 const tecnology = [
     {   
@@ -89,11 +90,11 @@ export default function home(){
                 </div>
 
                 <div className="apresentationImage">
+                    <img src="../../assets/image/icons/dialog-box.png" alt="" className="dialogBoxStart"/>
+                    <span><WriteText description="teste"/></span>
                     <img src="/assets/image/icons/undraw_tree.png" alt="man next to a tree" />
                 </div>
             </div>
-
-            
 
             <div className="tec">
                     <Tecnology options={tecnology}/>

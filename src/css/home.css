@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+:root{
+    dialogboxHeight: 15em;
+    dialogboxWidth: 40em;
+
+}
+
 .containerHome{
     /* background: url("/assets/image/icons/purple.jpg");
     background-size: cover; */
@@ -44,6 +50,13 @@ p{
 .apresentationImage{
     display: flex;
     justify-content: flex-end;
+
+}
+
+.dialogBoxStart{
+    transform: translate(35%, 0%) scaleX(-1);
+    height: 15em;
+    width: 40em;
 }
 
 

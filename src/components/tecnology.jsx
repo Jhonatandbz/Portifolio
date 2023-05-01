@@ -5,7 +5,6 @@ export default function tecnology({options}){
 
     const images = options;
 
-
     function teste(index){
         console.log(index)
 
@@ -21,7 +20,7 @@ export default function tecnology({options}){
         <div className="containerTec">
 
             <div className="descriptionTec">
-                <img src="../../assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
+                <img src="../../assets/image/icons/dialog-box.png" alt="" className="dialogBoxTec"/>
                 <span></span>
                 <img src="../../assets/image/icons/undraw_Virtual_reality_re_yg8i.png" alt="" className="observe" />
             </div>
