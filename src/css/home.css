@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-:root{
-    dialogboxHeight: 15em;
-    dialogboxWidth: 40em;
-
-}
 
 .containerHome{
     /* background: url("/assets/image/icons/purple.jpg");
