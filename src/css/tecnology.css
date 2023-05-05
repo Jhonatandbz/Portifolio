@@ -6,7 +6,6 @@
 .containerTec{
     display: flex;
     height: 90vh;
-    justify-content: flex-start;
 }
 
 
@@ -16,10 +15,21 @@
 }
 
 .containerTec .dialogBoxTec{
-    width: 40vw;
-    height: 35vh;
-    left: 5vw;
-    transform: translate(15%,40%);
+    display: flex;
+    justify-content: center;
+    transform: translate(25%, 35%);
+}
+
+.containerTec .dialogBoxTec img{
+    height: 10em;
+    width: 30em;
+}
+
+.containerTec .dialogBoxTec p{
+    height: 10em;
+    width: 27em;
+    text-align: justify;
+    margin-top: 1em;
 }
 
 .carouselTec .tecnology{
@@ -28,6 +38,7 @@
     padding-left: 40px;
     align-items: center;
     gap: 5px; 
+    transition: 0.2s ease-in-out;
 }
 
 .carouselTec{
@@ -36,8 +47,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 5em;
-    margin-right:  20vw;
-    margin-top: 10vw;
+    margin: 50px auto;
 }
 
 
@@ -48,10 +58,6 @@
 .carouselTec .tecnology span{
     white-space: nowrap;
     font-size: 12px;
-}
-
-.carouselTec .tecnology:hover:not(:hover) {
-    opacity: 0.3;
 }
 
 .carouselTec .tecnology:hover{

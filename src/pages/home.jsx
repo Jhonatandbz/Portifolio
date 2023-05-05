@@ -90,9 +90,14 @@ export default function home(){
                 </div>
 
                 <div className="apresentationImage">
-                    <img src="../../assets/image/icons/dialog-box.png" alt="" className="dialogBoxStart"/>
-                    <span><WriteText description="teste"/></span>
+                    <div className="dialogBoxStart">
+                        <img src="../../assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
+
+                        <p className="apresentationText"><WriteText description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, voluptas temporibus nobis doloremque nisi pariatur, at reiciendis recusandae perspiciatis consequatur similique ab eveniet deleniti, vel natus neque dicta vero consequuntur?"></WriteText></p>
+                    </div>
+
                     <img src="/assets/image/icons/undraw_tree.png" alt="man next to a tree" />
+
                 </div>
             </div>
 
@@ -104,6 +109,23 @@ export default function home(){
             <div className="projects">
                     <Carousel options={project}/>
             </div>
+
+            <aside className="sideMenu">
+            <ul>
+                <li>
+                    <a href="https://github.com/Jhonatandbz" target="_blank">
+                        <img src="/assets/image/icons/github.svg" alt="Icone Github" class="icon"/>
+                     </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/jhonatan-oliveira-4bb975211/" target="_blank">
+                        <img src="/assets/image/icons/linkedin-in.svg" alt="Icone linkedin" class="icon"/>
+                    </a>
+                </li>
+            </ul>
+            </aside>
         </>
     )
 }
+

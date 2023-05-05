@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "../css/carousel.css";
+import WriteText from "../components/funcoes";
 
 export default function carousel({options}){
     
@@ -37,8 +38,16 @@ export default function carousel({options}){
                     <img src="../../assets/image/icons/botton-arrow.png" alt="arrow to top" className="imageCarousel previous" onClick={() => nextImage(title)}/>
                 </div>
 
-                <img src="../../assets/image/icons/undraw_Landscape_photographer_ohgf.png" alt="" className="observerImage" />
+                <div className="containerDialog">
 
+                    <div className="dialogBoxCarousel">
+
+                        <img src="../../assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
+                        <p className="apresentationText"><WriteText description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, voluptas temporibus nobis doloremque nisi pariatur, at reiciendis recusandae perspiciatis consequatur similique ab eveniet deleniti, vel natus neque dicta vero consequuntur?"></WriteText></p>
+                    </div>
+
+                    <img src="../../assets/image/icons/undraw_observer.png" alt="" className="observerImage" />
+                </div>
             </div>
         </>
     )
