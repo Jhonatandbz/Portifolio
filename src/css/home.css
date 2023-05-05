@@ -63,10 +63,10 @@ p{
 
 .apresentationText{
     width: 25em;
-    height: 8em;
-    padding-bottom: 2em;
+    height: 6em;
+    margin-bottom: 2em;
     text-align: justify;
-
+    overflow-y: auto;
 }
 
 .sideMenu{

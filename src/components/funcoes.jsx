@@ -13,7 +13,7 @@ function writeText(props){
             var next = text.pop();
             aux += next
             setDescription(aux)
-        }, 20)
+        }, 2)
 
     }, [])
 
