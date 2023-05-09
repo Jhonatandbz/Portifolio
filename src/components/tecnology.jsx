@@ -1,19 +1,28 @@
 import React, {useState, useEffect, useRef} from "react";
 import "../css/tecnology.css";
-import WriteText from "../components/funcoes";
+import { writeString } from "../components/funcoes.js";
 
 export default function tecnology({options}){
 
+    const textTec = useRef(null)
     const images = options;
+    
+    useEffect(()=>{
+        const pElement = textTec.current;
 
-    function teste(index){
-        console.log(index)
+        console.log(pElement)
 
-        if (index%4 === 0) {
-            return (<br/>)
+        function write (){
+            if(window.scrollY == 300 && !pElement.textContent){
+                writeString(pElement, "Possuo conhecimento nas seguintes linguagens de programação:")
+            }
         }
-        
-    }
+
+
+        window.addEventListener('scroll', write);
+        return () => {window.removeEventListener('scroll', handleScroll);}
+
+    }, [])  
 
     return (
         <>
@@ -21,12 +30,11 @@ export default function tecnology({options}){
         <div className="containerTec">
 
             <div className="descriptionTec">
-
                 <div className="dialogBoxTec">
                     
                     <img src="../../assets/image/icons/dialog-box.png" alt="" />
 
-                    <p><WriteText description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, voluptas temporibus nobis doloremque nisi pariatur, at reiciendis recusandae perspiciatis consequatur similique ab eveniet deleniti, vel natus neque dicta vero consequuntur?"></WriteText></p>
+                    <p ref={textTec} className="apresentationText"></p>
                 </div>
 
                 <img src="../../assets/image/icons/undraw_Virtual_reality_re_yg8i.png" alt="" className="observe" />

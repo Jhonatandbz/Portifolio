@@ -1,10 +1,25 @@
-import React, {useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import "../css/carousel.css";
-import WriteText from "../components/funcoes";
+import { writeString } from "../components/funcoes.js";
 
 export default function carousel({options}){
     
-    const [title, setTitle] = useState(0)
+    const textCarousel = useRef(null);
+    const [title, setTitle] = useState(0);
+
+    useEffect(() => {
+
+        function write (){
+            if(window.scrollY == 900 && !textCarousel.current.textContent){
+                writeString(textCarousel.current, "Aqui estão alguns dos meus projetos!!!")
+            }
+        }
+
+        window.addEventListener('scroll', write);
+        return () => {window.removeEventListener('scroll', handleScroll);}
+    }, [])
+
+
 
     function previousImage(activeTitle){
         setTitle(activeTitle === 0 ? options.length - 1 : activeTitle-1)
@@ -43,7 +58,7 @@ export default function carousel({options}){
                     <div className="dialogBoxCarousel">
 
                         <img src="../../assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
-                        <p className="apresentationText"><WriteText description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, voluptas temporibus nobis doloremque nisi pariatur, at reiciendis recusandae perspiciatis consequatur similique ab eveniet deleniti, vel natus neque dicta vero consequuntur?"></WriteText></p>
+                        <p ref={textCarousel} className="apresentationText"></p>
                     </div>
 
                     <img src="../../assets/image/icons/undraw_observer.png" alt="" className="observerImage" />

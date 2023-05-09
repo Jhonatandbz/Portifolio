@@ -1,8 +1,9 @@
-import React, {useState} from "react";
+import React, {useEffect, useRef} from "react";
+import ReactDOM from 'react-dom/client';
 import Carousel from "../components/carousel";
 import Tecnology from "../components/tecnology";
 import "../css/home.css";
-import WriteText from "../components/funcoes";
+import { writeString } from "../components/funcoes.js";
 
 const tecnology = [
     {   
@@ -76,7 +77,15 @@ const project = [
 ];
 
 
-export default function home(){
+export default function home() {
+    
+    const textHome = useRef(null)
+
+    
+
+    useEffect(() => {
+        writeString(textHome.current, "Olá, meu nome é Jhonatan e sou estudante no ultimo ano de Engenharia da Computação da Universidade Federal do Pará (UFPA). Estou em busca de um estágio para aplicar minhas habilidades e expandir meus conhecimentos. Sou apaixonado por tecnologia e estou sempre buscando aprender mais sobre as tendências e boas práticas de mercado.")
+    })
 
     return (
         <>
@@ -93,7 +102,7 @@ export default function home(){
                     <div className="dialogBoxStart">
                         <img src="../../assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
 
-                        <p className="apresentationText"><WriteText description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, voluptas temporibus nobis doloremque nisi pariatur, at reiciendis recusandae perspiciatis consequatur similique ab eveniet deleniti, vel natus neque dicta vero consequuntur?"></WriteText></p>
+                        <p ref={textHome} className="apresentationText"></p>
                     </div>
 
                     <img src="/assets/image/icons/undraw_tree.png" alt="man next to a tree" />
@@ -104,7 +113,7 @@ export default function home(){
             <div className="tec">
                     <Tecnology options={tecnology}/>
             </div>
-
+            
 
             <div className="projects">
                     <Carousel options={project}/>
@@ -114,18 +123,20 @@ export default function home(){
             <ul>
                 <li>
                     <a href="https://github.com/Jhonatandbz" target="_blank">
-                        <img src="/assets/image/icons/github.svg" alt="Icone Github" class="icon"/>
+                        <img src="/assets/image/icons/github.svg" alt="Icone Github" className="icon"/>
                      </a>
                 </li>
 
                 <li>
                     <a href="https://www.linkedin.com/in/jhonatan-oliveira-4bb975211/" target="_blank">
-                        <img src="/assets/image/icons/linkedin-in.svg" alt="Icone linkedin" class="icon"/>
+                        <img src="/assets/image/icons/linkedin-in.svg" alt="Icone linkedin" className="icon"/>
                     </a>
                 </li>
             </ul>
             </aside>
         </>
     )
+
 }
+
 
