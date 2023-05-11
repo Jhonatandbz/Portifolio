@@ -11,7 +11,7 @@ export default function Tecnology({options}){
         const pElement = textTec.current;
 
         function write (){
-            if(window.scrollY === 300 && !pElement.textContent){
+            if(window.scrollY >= 300 && window.scrollY <= 320 && !pElement.textContent){
                 writeString(pElement, "Possuo conhecimento nas seguintes linguagens de programação:")
             }
         }

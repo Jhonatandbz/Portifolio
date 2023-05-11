@@ -10,7 +10,7 @@ export default function Carousel({options}){
     useEffect(() => {
 
         function write (){
-            if(window.scrollY === 900 && !textCarousel.current.textContent){
+            if(window.scrollY >= 900 && window.scrollY <= 920 && !textCarousel.current.textContent){
                 writeString(textCarousel.current, "Aqui estão alguns dos meus projetos!!!")
             }
         }
