@@ -36,7 +36,7 @@ export default function Carousel({options}){
             <div className="containerCarousel">
                 <div className="carousel">
 
-                    <img src="/assets/image/icons/top-arrow.png" alt="arrow to top" className="imageCarousel next" onClick={() => previousImage(title)}/>
+                    <img src="/Portifolio/assets/image/icons/top-arrow.png" alt="arrow to top" className="imageCarousel next" onClick={() => previousImage(title)}/>
 
                     <div className="contents">
                         <a href={options[title].url} target="_blank" rel="noopener noreferrer">
@@ -50,18 +50,18 @@ export default function Carousel({options}){
                         
                     </div>
 
-                    <img src="/assets/image/icons/botton-arrow.png" alt="arrow to top" className="imageCarousel previous" onClick={() => nextImage(title)}/>
+                    <img src="/Portifolio/assets/image/icons/botton-arrow.png" alt="arrow to top" className="imageCarousel previous" onClick={() => nextImage(title)}/>
                 </div>
 
                 <div className="containerDialog">
 
                     <div className="dialogBoxCarousel">
 
-                        <img src="/assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
+                        <img src="/Portifolio/assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
                         <p ref={textCarousel} className="apresentationText"></p>
                     </div>
 
-                    <img src="/assets/image/icons/undraw_observer.png" alt="" className="observerImage" />
+                    <img src="/Portifolio/assets/image/icons/undraw_observer.png" alt="" className="observerImage" />
                 </div>
             </div>
         </>

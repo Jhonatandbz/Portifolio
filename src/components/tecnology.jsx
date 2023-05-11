@@ -31,12 +31,12 @@ export default function Tecnology({options}){
             <div className="descriptionTec">
                 <div className="dialogBoxTec">
                     
-                    <img src="/assets/image/icons/dialog-box.png" alt="" />
+                    <img src="/Portifolio/assets/image/icons/dialog-box.png" alt="" />
 
                     <p ref={textTec} className="apresentationText"></p>
                 </div>
 
-                <img src="/assets/image/icons/undraw_Virtual_reality_re_yg8i.png" alt="" className="observe" />
+                <img src="/Portifolio/assets/image/icons/undraw_Virtual_reality_re_yg8i.png" alt="" className="observe" />
             </div>
 
             <div className="carouselTec">
