@@ -122,13 +122,13 @@ export default function Home() {
             <aside className="sideMenu">
             <ul className="sideMenuList">
                 <li>
-                    <a href="https://github.com/Jhonatandbz" rel="noreferrer" target="_blank" >
+                    <a href="https://github.com/Jhonatandbz" rel="noopener noreferrer" target="_blank" >
                         <img src="/assets/image/icons/github.svg" alt="Icone Github" className="icon"/>
                      </a>
                 </li>
 
                 <li>
-                    <a href="https://www.linkedin.com/in/jhonatan-oliveira-4bb975211/" rel="noreferrer" target="_blank">
+                    <a href="https://www.linkedin.com/in/jhonatan-oliveira-4bb975211/" rel="noopener noreferrer" target="_blank">
                         <img src="/assets/image/icons/linkedin-in.svg" alt="Icone linkedin" className="icon"/>
                     </a>
                 </li>

@@ -39,7 +39,7 @@ export default function Carousel({options}){
                     <img src="/assets/image/icons/top-arrow.png" alt="arrow to top" className="imageCarousel next" onClick={() => previousImage(title)}/>
 
                     <div className="contents">
-                        <a href={options[title].url} target="_blank" rel="noreferrer">
+                        <a href={options[title].url} target="_blank" rel="noopener noreferrer">
                             <img src={options[title].image} alt="Akame project" className="imageProject"/>
                         </a>
                         
