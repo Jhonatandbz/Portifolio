@@ -9,5 +9,5 @@ export function writeString(element, text) {
       element.innerHTML += text.charAt(index);
       index++;
       element.scrollTop = element.scrollHeight;
-    }, 5);
+    }, 50);
   }
