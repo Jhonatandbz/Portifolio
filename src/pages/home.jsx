@@ -1,49 +1,49 @@
 import React, {useEffect, useRef} from "react";
-import ReactDOM from 'react-dom/client';
 import Carousel from "../components/carousel";
 import Tecnology from "../components/tecnology";
 import "../css/home.css";
-import { writeString } from "../components/funcoes.js";
+import { writeString } from "../components/funcoes";
+
 
 const tecnology = [
     {   
         id: 1,
-        rout: '../../assets/image/tecnology/html-5.png',
+        rout: '/assets/image/tecnology/html-5.png',
         name: 'html 5',
     },
     {   
         id: 2,
-        rout: '../../assets/image/tecnology/css-3.png',
+        rout: '/assets/image/tecnology/css-3.png',
         name: 'css 3',
     },
     {   
         id: 3,
-        rout: '../../assets/image/tecnology/js.png',
+        rout: '/assets/image/tecnology/js.png',
         name: 'Java Script',
     },
     {   
         id: 4,
-        rout: '../../assets/image/tecnology/react.png',
+        rout: '/assets/image/tecnology/react.png',
         name: 'React',
     },
     {   
         id: 5,
-        rout: '../../assets/image/tecnology/python.png',
+        rout: '/assets/image/tecnology/python.png',
         name: 'Python',
     },
     {   
         id: 6,
-        rout: '../../assets/image/tecnology/c.png',
+        rout: '/assets/image/tecnology/c.png',
         name: 'C',
     },
     {   
         id: 7,
-        rout: '../../assets/image/tecnology/java.png',
+        rout: '/assets/image/tecnology/java.png',
         name: 'Java',
     },
     {   
         id: 8,
-        rout: '../../assets/image/tecnology/mysql.png',
+        rout: '/assets/image/tecnology/mysql.png',
         name: 'MySql',
     },
 
@@ -76,23 +76,23 @@ const project = [
     // },
 ];
 
-
-export default function home() {
+export default function Home() {
     
     const textHome = useRef(null)
 
-    
-
     useEffect(() => {
+
+        
         writeString(textHome.current, "Olá, meu nome é Jhonatan e sou estudante no ultimo ano de Engenharia da Computação da Universidade Federal do Pará (UFPA). Estou em busca de um estágio para aplicar minhas habilidades e expandir meus conhecimentos. Sou apaixonado por tecnologia e estou sempre buscando aprender mais sobre as tendências e boas práticas de mercado.")
-    })
+
+    }, [])
 
     return (
         <>
             <div className="containerHome">
                 <div className="myName">
 
-                    <img src="/assets/image/icons/paper.png" alt="" className="imagePaper"/>
+                    <img src="/assets/image/icons/paper.png" alt="paper" className="imagePaper"/>
                     <figcaption className="name">Jhonatan Oliveira</figcaption>
                     <figcaption className="dev"> <em>Dev junior</em></figcaption>
                 
@@ -100,7 +100,7 @@ export default function home() {
 
                 <div className="apresentationImage">
                     <div className="dialogBoxStart">
-                        <img src="../../assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
+                        <img src="/assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
 
                         <p ref={textHome} className="apresentationText"></p>
                     </div>
@@ -120,15 +120,15 @@ export default function home() {
             </div>
 
             <aside className="sideMenu">
-            <ul>
+            <ul className="sideMenuList">
                 <li>
-                    <a href="https://github.com/Jhonatandbz" target="_blank">
+                    <a href="https://github.com/Jhonatandbz" rel="noreferrer" target="_blank" >
                         <img src="/assets/image/icons/github.svg" alt="Icone Github" className="icon"/>
                      </a>
                 </li>
 
                 <li>
-                    <a href="https://www.linkedin.com/in/jhonatan-oliveira-4bb975211/" target="_blank">
+                    <a href="https://www.linkedin.com/in/jhonatan-oliveira-4bb975211/" rel="noreferrer" target="_blank">
                         <img src="/assets/image/icons/linkedin-in.svg" alt="Icone linkedin" className="icon"/>
                     </a>
                 </li>

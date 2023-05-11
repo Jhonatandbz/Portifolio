@@ -8,5 +8,6 @@ export function writeString(element, text) {
       }
       element.innerHTML += text.charAt(index);
       index++;
-    }, 50);
+      element.scrollTop = element.scrollHeight;
+    }, 5);
   }

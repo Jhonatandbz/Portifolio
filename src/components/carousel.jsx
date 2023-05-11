@@ -2,7 +2,7 @@ import React, {useEffect, useRef, useState} from "react";
 import "../css/carousel.css";
 import { writeString } from "../components/funcoes.js";
 
-export default function carousel({options}){
+export default function Carousel({options}){
     
     const textCarousel = useRef(null);
     const [title, setTitle] = useState(0);
@@ -10,13 +10,13 @@ export default function carousel({options}){
     useEffect(() => {
 
         function write (){
-            if(window.scrollY == 900 && !textCarousel.current.textContent){
+            if(window.scrollY === 900 && !textCarousel.current.textContent){
                 writeString(textCarousel.current, "Aqui estão alguns dos meus projetos!!!")
             }
         }
 
         window.addEventListener('scroll', write);
-        return () => {window.removeEventListener('scroll', handleScroll);}
+        return () => {window.removeEventListener('scroll', write);}
     }, [])
 
 
@@ -36,11 +36,11 @@ export default function carousel({options}){
             <div className="containerCarousel">
                 <div className="carousel">
 
-                    <img src="../../assets/image/icons/top-arrow.png" alt="arrow to top" className="imageCarousel next" onClick={() => previousImage(title)}/>
+                    <img src="/assets/image/icons/top-arrow.png" alt="arrow to top" className="imageCarousel next" onClick={() => previousImage(title)}/>
 
                     <div className="contents">
-                        <a href={options[title].url} target="_blank" >
-                            <img src={options[title].image} alt="Akame project image" className="imageProject"/>
+                        <a href={options[title].url} target="_blank" rel="noreferrer">
+                            <img src={options[title].image} alt="Akame project" className="imageProject"/>
                         </a>
                         
                         <div className="description">
@@ -50,18 +50,18 @@ export default function carousel({options}){
                         
                     </div>
 
-                    <img src="../../assets/image/icons/botton-arrow.png" alt="arrow to top" className="imageCarousel previous" onClick={() => nextImage(title)}/>
+                    <img src="/assets/image/icons/botton-arrow.png" alt="arrow to top" className="imageCarousel previous" onClick={() => nextImage(title)}/>
                 </div>
 
                 <div className="containerDialog">
 
                     <div className="dialogBoxCarousel">
 
-                        <img src="../../assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
+                        <img src="/assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
                         <p ref={textCarousel} className="apresentationText"></p>
                     </div>
 
-                    <img src="../../assets/image/icons/undraw_observer.png" alt="" className="observerImage" />
+                    <img src="/assets/image/icons/undraw_observer.png" alt="" className="observerImage" />
                 </div>
             </div>
         </>

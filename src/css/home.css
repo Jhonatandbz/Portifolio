@@ -2,8 +2,6 @@
 
 
 .containerHome{
-    /* background: url("/assets/image/icons/purple.jpg");
-    background-size: cover; */
     height: 100vh;
     max-width: 100vw;
 }
@@ -65,8 +63,9 @@ p{
     width: 25em;
     height: 6em;
     margin-bottom: 2em;
+    padding-right: 8px;
     text-align: justify;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 
@@ -94,6 +93,7 @@ p{
 .sideMenu ul{
     display: flex;
     flex-direction: column;
+    list-style-type: none;
     gap: 2em;
 }
 
