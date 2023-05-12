@@ -15,6 +15,8 @@ export default function Carousel({options}){
             }
         }
 
+        console.log("teste")
+
         window.addEventListener('scroll', write);
         return () => {window.removeEventListener('scroll', write);}
     }, [])
