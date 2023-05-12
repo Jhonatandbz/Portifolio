@@ -1,6 +1,7 @@
 
-export function writeString(element, text) {
+export function writeString(element, text, timerRef) {
     let index = 0;
+    clearInterval(timerRef);
     const timer = setInterval(() => {
       if (index >= text.length) {
         clearInterval(timer);
@@ -9,5 +10,8 @@ export function writeString(element, text) {
       element.innerHTML += text.charAt(index);
       index++;
       element.scrollTop = element.scrollHeight;
-    }, 50);
+    }, 20);
+
+    return timer;
+
   }

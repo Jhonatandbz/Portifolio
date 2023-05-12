@@ -1,8 +1,7 @@
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import Carousel from "../components/carousel";
 import Tecnology from "../components/tecnology";
-import "../css/home.css";
-import { writeString } from "../components/funcoes";
+import About from "../components/about"
 
 
 const tecnology = [
@@ -10,45 +9,54 @@ const tecnology = [
         id: 1,
         rout: './assets/image/tecnology/html-5.png',
         name: 'html 5',
+        description: 'HTML5 é a versão mais recente da linguagem usada para criar conteúdo na web. Ela oferece novos recursos, como suporte a áudio e vídeo sem plugins, semântica melhorada e maior compatibilidade com dispositivos móveis. Com HTML5, é possível criar páginas web interativas e responsivas.',
     },
     {   
         id: 2,
         rout: './assets/image/tecnology/css-3.png',
         name: 'css 3',
+        description: 'CSS3 é a versão mais recente da linguagem usada para definir a aparência e o layout de uma página web. Ela introduz novos recursos, como bordas arredondadas, gradientes, sombras e transições, além de suporte para animações, flexbox e grid layouts, permitindo criar designs mais sofisticados e responsivos.',
     },
     {   
         id: 3,
         rout: './assets/image/tecnology/js.png',
         name: 'Java Script',
+        description: 'JavaScript é uma linguagem de programação usada para criar comportamentos interativos em páginas web. Ela permite a validação de formulários, animações e atualização de conteúdo em tempo real. JavaScript é fácil de aprender e possui muitas bibliotecas e frameworks que facilitam o desenvolvimento de aplicativos web.',
     },
     {   
         id: 4,
         rout: './assets/image/tecnology/react.png',
         name: 'React',
+        description: 'React é uma biblioteca JavaScript para criação de interfaces de usuário em aplicativos web, utilizando uma abordagem baseada em componentes e o conceito de virtual DOM para atualizações mais eficientes. É amplamente utilizado para desenvolver interfaces modernas e escaláveis.',
     },
     {   
         id: 5,
         rout: './assets/image/tecnology/python.png',
         name: 'Python',
+        description: 'Python é uma linguagem de programação de alto nível, interpretada e fácil de aprender. É utilizada em diversas áreas, como inteligência artificial, análise de dados, desenvolvimento web e automação de tarefas. Possui uma sintaxe simples e legibilidade, além de contar com uma grande comunidade de desenvolvedores e bibliotecas.',
     },
     {   
         id: 6,
         rout: './assets/image/tecnology/c.png',
         name: 'C',
+        description: 'C é uma linguagem de programação de baixo nível, de propósito geral e eficiente, amplamente utilizada em sistemas operacionais, drivers de dispositivos e aplicações de desempenho crítico.',
     },
     {   
         id: 7,
         rout: './assets/image/tecnology/java.png',
         name: 'Java',
+        description: 'Java é uma linguagem de programação orientada a objetos, independente de plataforma e amplamente utilizada para desenvolver aplicativos de desktop, web e móveis. É conhecida por sua portabilidade, segurança e facilidade de manutenção.',
     },
     {   
         id: 8,
         rout: './assets/image/tecnology/mysql.png',
         name: 'MySql',
+        description: 'MySQL é um sistema de gerenciamento de banco de dados de código aberto, amplamente utilizado em aplicações web e de negócios para armazenar e manipular grandes quantidades de dados.',
     },{   
         id: 9,
         rout: './assets/image/tecnology/php.png',
         name: 'PHP',
+        description: 'PHP é uma linguagem de programação de código aberto usada para desenvolvimento de aplicações web dinâmicas do lado do servidor. É fácil de aprender, suporta vários bancos de dados e é compatível com diversas plataformas. É usado em muitos sites populares, como Facebook e Wikipedia.',
     },
 
 ];
@@ -81,37 +89,11 @@ const project = [
 ];
 
 export default function Home() {
-    
-    const textHome = useRef(null)
-
-    useEffect(() => {
-
-        
-        writeString(textHome.current, "Olá, meu nome é Jhonatan e sou estudante no ultimo ano de Engenharia da Computação da Universidade Federal do Pará (UFPA). Estou em busca de um estágio para aplicar minhas habilidades e expandir meus conhecimentos. Sou apaixonado por tecnologia e estou sempre buscando aprender mais sobre as tendências e boas práticas de mercado.")
-
-    }, [])
 
     return (
         <>
-            <div className="containerHome">
-                <div className="myName">
-
-                    <img src="./assets/image/icons/paper.png" alt="paper" className="imagePaper"/>
-                    <figcaption className="name">Jhonatan Oliveira</figcaption>
-                    <figcaption className="dev"> <em>Dev junior</em></figcaption>
-                
-                </div>
-
-                <div className="apresentationImage">
-                    <div className="dialogBoxStart">
-                        <img src="./assets/image/icons/dialog-box.png" alt="" className="dialogBox"/>
-
-                        <p ref={textHome} className="apresentationText"></p>
-                    </div>
-
-                    <img src="./assets/image/icons/undraw_tree.png" alt="man next to a tree" />
-
-                </div>
+            <div className="about">
+                <About></About>
             </div>
 
             <div className="tec">

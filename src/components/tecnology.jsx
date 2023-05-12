@@ -5,23 +5,38 @@ import { writeString } from "../components/funcoes.js";
 export default function Tecnology({options}){
 
     const textTec = useRef(null)
+    const timerRef = useRef(null)
     const images = options;
     
     useEffect(()=>{
         const pElement = textTec.current;
+        
 
         function write (){
-            if(window.scrollY >= 300 && window.scrollY <= 320 && !pElement.textContent){
-                writeString(pElement, "Possuo conhecimento nas seguintes linguagens de programação:")
+            if(window.scrollY >= 300 && window.scrollY <= 310 && !pElement.textContent){
+                pElement.textContent = ''
+                timerRef.current = writeString(pElement, "Possuo conhecimento nas seguintes linguagens de programação:", timerRef.current)
             }
         }
 
+        function reWrite(){
+            if(window.scrollY >= 900){
+            pElement.textContent = ''
+            }
+        }
 
         window.addEventListener('scroll', write);
-        return () => {window.removeEventListener('scroll', write);}
-        
-
+        window.addEventListener('scroll', reWrite);
+        return () => {
+            window.removeEventListener('scroll', write);
+            window.removeEventListener('scroll', reWrite);
+        }
     }, [])  
+
+    function writeTec(description){
+        textTec.current.textContent = ''
+        timerRef.current = writeString(textTec.current, description, timerRef.current)   
+    }
 
     return (
         <>
@@ -41,15 +56,15 @@ export default function Tecnology({options}){
 
             <div className="carouselTec">
 
-                {images.map((item, index) => {
+                {images.map((item) => {
 
-                    const {id, rout, name} = item;
+                    const {id, rout, name, description} = item;
                 
                     return (
 
                         <div className="imagesTec">
                             <div className="tecnology" key={id}>
-                                <img src={rout} alt={name}/>
+                                <img src={rout} alt={name} onClick={()=>writeTec(description)}/>
                             </div>
                         </div>
                     )
