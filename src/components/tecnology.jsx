@@ -19,17 +19,9 @@ export default function Tecnology({options}){
             }
         }
 
-        function reWrite(){
-            if(window.scrollY >= 900){
-            pElement.textContent = ''
-            }
-        }
-
         window.addEventListener('scroll', write);
-        window.addEventListener('scroll', reWrite);
         return () => {
             window.removeEventListener('scroll', write);
-            window.removeEventListener('scroll', reWrite);
         }
     }, [])  
 
