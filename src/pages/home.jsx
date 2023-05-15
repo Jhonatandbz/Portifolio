@@ -74,12 +74,12 @@ const project = [
         image: "./assets/image/projects/interactive-card.PNG",
         description: "Cartão de credito interativo utilizando HTML5, CSS3 e JavaScript",
     },
-    // {
-    //     name: "Social network offline",
-    //     url: "https://github.com/Jhonatandbz/projeto-rede-social",
-    //     image: "",
-    //     description: "",
-    // },
+    {
+        name: "Social network offline",
+        url: "https://github.com/Jhonatandbz/projeto-rede-social",
+        image: "./assets/image/projects/social-media-c.PNG",
+        description: "O intuito foi criar uma rede social local utilizando a linguagem C",
+    },
     // {
     //     name: "",
     //     url: "",
