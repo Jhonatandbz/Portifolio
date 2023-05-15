@@ -77,7 +77,7 @@ const project = [
     {
         name: "Social network offline",
         url: "https://github.com/Jhonatandbz/projeto-rede-social",
-        image: "./assets/image/projects/social-media-c.PNG",
+        image: "./assets/image/projects/social-media-c.png",
         description: "O intuito foi criar uma rede social local utilizando a linguagem C",
     },
     // {
