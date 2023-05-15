@@ -40,7 +40,7 @@ export default function Carousel({options}){
 
                     <div className="contents">
                         <a href={options[title].url} target="_blank" rel="noopener noreferrer">
-                            <img src={options[title].image} alt="Akame project" className="imageProject"/>
+                            <img src={options[title].image} alt="Project" className="imageProject"/>
                         </a>
                         
                         <div className="description">
