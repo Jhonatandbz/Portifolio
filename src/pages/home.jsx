@@ -80,12 +80,12 @@ const project = [
         image: "./assets/image/projects/social-media-c.png",
         description: "O intuito foi criar uma rede social local utilizando a linguagem C",
     },
-    // {
-    //     name: "",
-    //     url: "",
-    //     image: "",
-    //     description: "",
-    // },
+    {
+        name: "Game Wumpus using AI",
+        url: "https://github.com/Jhonatandbz/wumpus-IA",
+        image: "./assets/image/projects/wumpusGame.png",
+        description: "Este é o jogo do incrível mundo de wumpus utilizando Inteligencia artificial para solucioná-lo",
+    },
 ];
 
 export default function Home() {
