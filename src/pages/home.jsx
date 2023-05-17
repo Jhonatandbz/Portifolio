@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../components/carousel";
+import Carousel from "../components/projects";
 import Tecnology from "../components/tecnology";
 import About from "../components/about"
 
@@ -66,25 +66,29 @@ const project = [
         name: "Akame ga kill project",
         url: "https://jhonatandbz.github.io/projeto-akame-ga-kill/",
         image: "./assets/image/projects/akame-project.PNG",
-        description: "O primeiro projeto com a utilização das tecnologias HTML5 e CSS3.",
+        description: "O primeiro projeto com a utilização das tecnologias HTML5, CSS3 e JS.",
+        tec: "html 5, css 3, Java Script",
     },
     {
         name: "Interactive card details form main",
         url: "https://jhonatandbz.github.io/interactive-card-details-form-main/",
         image: "./assets/image/projects/interactive-card.PNG",
         description: "Cartão de credito interativo utilizando HTML5, CSS3 e JavaScript",
+        tec: "html 5, css 3, Java Script",
     },
     {
         name: "Social network offline",
         url: "https://github.com/Jhonatandbz/projeto-rede-social",
         image: "./assets/image/projects/social-media-c.png",
         description: "O intuito foi criar uma rede social local utilizando a linguagem C",
+        tec: "C",
     },
     {
         name: "Game Wumpus using AI",
         url: "https://github.com/Jhonatandbz/wumpus-IA",
         image: "./assets/image/projects/wumpusGame.png",
         description: "Este é o jogo do incrível mundo de wumpus utilizando Inteligencia artificial para solucioná-lo",
+        tec: "Python",
     },
 ];
 
@@ -102,7 +106,7 @@ export default function Home() {
             
 
             <div className="projects">
-                    <Carousel options={project}/>
+                    <Carousel proj={project} tec={tecnology}/>
             </div>
 
             <aside className="sideMenu">

@@ -93,6 +93,16 @@
     width: 30em;
 }
 
+.tecProj{
+    display: flex;
+}
+
+.tecProjImg{
+    width: 2em;
+    height: 2em;
+    margin-left: 0.5em;
+}
+
 
 @keyframes arrowAnimation {
     0%{

@@ -54,9 +54,9 @@ export default function Tecnology({options}){
                 
                     return (
 
-                        <div className="imagesTec">
+                        <div className="imagesTec" key={id}>
                             <div className="tecnology" key={id}>
-                                <img src={rout} alt={name} onClick={()=>writeTec(description)}/>
+                                <img src={rout} alt={name} onClick={()=>writeTec(description)} key={id}/>
                             </div>
                         </div>
                     )
