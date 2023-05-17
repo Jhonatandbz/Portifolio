@@ -90,6 +90,14 @@ const project = [
         description: "Este é o jogo do incrível mundo de wumpus utilizando Inteligencia artificial para solucioná-lo",
         tec: "Python",
     },
+    {
+        name: "Portifólio",
+        url: "https://jhonatandbz.github.io/Portifolio/",
+        image: "./assets/image/projects/portifolio.PNG",
+        description: "O portifólio que estamos agora, que é meu projeto mais recente utilizando React",
+        tec: "html 5, css 3, Java Script, React",
+    },
+    
 ];
 
 export default function Home() {
