@@ -96,6 +96,12 @@ const project = [
         image: "./assets/image/projects/portifolio.PNG",
         description: "O portifólio que estamos agora, que é meu projeto mais recente utilizando React",
         tec: "html 5, css 3, Java Script, React",
+    },{
+        name: "Century Game",
+        url: "https://github.com/Jhonatandbz/century-game",
+        image: "./assets/image/projects/century-game.PNG",
+        description: "Jogo criado utilizando as bibliotecas Pygame e OpenGL da linguagem python",
+        tec: "Python",
     },
     
 ];
