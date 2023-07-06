@@ -63,11 +63,23 @@ const tecnology = [
         rout: './assets/image/tecnology/php.png',
         name: 'PHP',
         description: 'PHP é uma linguagem de programação de código aberto usada para desenvolvimento de aplicações web dinâmicas do lado do servidor. É fácil de aprender, suporta vários bancos de dados e é compatível com diversas plataformas. É usado em muitos sites populares, como Facebook e Wikipedia.',
+    },{   
+        id: 11,
+        rout: './assets/image/tecnology/cs.png',
+        name: 'C#',
+        description: "C# é uma linguagem de programação moderna, orientada a objetos e multiplataforma, desenvolvida pela Microsoft. Com uma sintaxe simples e recursos avançados, é amplamente usado para o desenvolvimento de aplicativos desktop, web e mobile. Sua integração com a plataforma .NET oferece interoperabilidade com outras linguagens e tecnologias. C# é popular devido à sua facilidade de aprendizado, poder e suporte da comunidade.",
     },
 
 ];
 
 const project = [
+    {
+        name: "CRUD using C#",
+        url: "https://github.com/Jhonatandbz/CSharp_CRUD",
+        image: "./assets/image/projects/crud-cs.png",
+        description: "Projeto CRUD utilizando C#.",
+        tec: "C#",
+    },
     {
         name: "Akame ga kill project",
         url: "https://jhonatandbz.github.io/projeto-akame-ga-kill/",
@@ -105,8 +117,8 @@ const project = [
     },
     {
         name: "Meu Time",
-        url: "https://jhonatandbz.github.io/meu-time/",
-        image: "./assets/image/projects/meu-time.PNG",
+        url: "https://jhonatandbz.github.io/time/",
+        image: "./assets/image/projects/meu-time.jpg",
         description: "Projeto usando API-Football para apresentar dados de times de diferentes ligas e temporadas",
         tec: "html 5, css 3, Type Script, React",
     },{
