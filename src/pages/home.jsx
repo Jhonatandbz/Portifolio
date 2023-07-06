@@ -118,7 +118,7 @@ const project = [
     {
         name: "Meu Time",
         url: "https://jhonatandbz.github.io/time/",
-        image: "./assets/image/projects/meu-time.jpg",
+        image: "./assets/image/projects/meu-time.png",
         description: "Projeto usando API-Football para apresentar dados de times de diferentes ligas e temporadas",
         tec: "html 5, css 3, Type Script, React",
     },{
